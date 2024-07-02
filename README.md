@@ -1,41 +1,30 @@
 # Calculator / Calculadora
-# Script para criar uma calculadora no Python
-def adicionar(a, b):
-    return a + b
 
-def subtrair(a, b):
-    return a - b
+## Description
+This is a simple calculator application built using C. It performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-def multiplicar(a, b):
-    return a * b
+## Features
+- Addition: Perform addition of two numbers.
+- Subtraction: Perform subtraction of two numbers.
+- Multiplication: Perform multiplication of two numbers.
+- Division: Perform division of two numbers.
 
-def dividir(a, b):
-    if b != 0:
-        return a / b
-    else:
-        return "Erro: divisão por zero"
+## Installation
+1. Clone the repository: `git clone https://github.com/MatheusUsb/Calculator.git`
+2. Navigate to the project directory: `cd Calculator`
+3. Compile the source code: `gcc calculator.c -o calculator`
+4. Run the calculator application: `./calculator`
 
-print("Calculadora Simples")
-print("Operações disponíveis:")
-print("1 - Adição")
-print("2 - Subtração")
-print("3 - Multiplicação")
-print("4 - Divisão")
+## Usage
+1. Enter the numbers and select the desired operation from the menu.
+2. The result will be displayed on the console.
 
-operacao = input("Digite o número da operação desejada: ")
+## Contributing
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-if operacao == "1":
-    resultado = adicionar(num1, num2)
-elif operacao == "2":
-    resultado = subtrair(num1, num2)
-elif operacao == "3":
-    resultado = multiplicar(num1, num2)
-elif operacao == "4":
-    resultado = dividir(num1, num2)
-else:
-    resultado = "Operação inválida"
+## Contact
+For any questions or inquiries, please contact me at [matheusalexusb@gmail.com].
 
-print("Resultado: ", resultado)
